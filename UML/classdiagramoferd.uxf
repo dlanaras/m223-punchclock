@@ -1,0 +1,5 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>16</zoom_level><element><id>UMLClass</id><coordinates><x>464</x><y>320</y><w>352</w><h>160</h></coordinates><panel_attributes>Entity
+--
++id : long
++checkin: timestamp
++checkout: timestamp</panel_attributes><additional_attributes></additional_attributes></element></diagram>
