@@ -9,6 +9,7 @@ import java.time.LocalDateTime;
 @Entity
 public class Entry {
   @Id
+  @Column(name = "entry_id")
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Schema(readOnly = true)
   private Long id;
@@ -18,6 +19,10 @@ public class Entry {
 
   @Column(nullable = false)
   private LocalDateTime checkOut;
+
+  @ManyToOne
+  @JoinColumn(name = "category_id")
+  private Category category;
 
   public Long getId() {
     return id;
